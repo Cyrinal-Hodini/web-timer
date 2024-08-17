@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入CSS样式表 -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="timer" id="timer">00:00:00.000</div>
+        <div class="gird-container border-top" id="controller">
+            <button class="grid-item" id="start" style="grid-area: start">开始计时</button>
+            <button class="grid-item" id="pause" style="grid-area: pause">暂停计时</button>
+            <button class="grid-item" id="reset" style="grid-area: reset">重置计时</button>
+            <button class="grid-item" id="record" style="grid-area: record">记录时间</button>
+            <button class="grid-item" id="clear" style="grid-area: clear">清空记录</button>
+        </div>
+        <div class="timeline"></div>
+    </div>
+</body>
+
+<!-- 引入JS脚本 -->
+<script src="index.js"></script>
+
+</html>

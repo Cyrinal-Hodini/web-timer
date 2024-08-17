@@ -1,0 +1,76 @@
+body
+{
+    display: block;
+    background-color: azure;
+    position: relative;
+}
+
+.main
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+.border-top
+{
+    border-top: 1px solid black;
+}
+
+.timer
+{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gird-container
+{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "start pause"
+        "reset record"
+        "clear clear";
+}
+.grid-item
+{
+    font-size: 20px;
+    display: flex;
+    height: 10vh;
+    max-height: 50px;
+    min-height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.grid-item:hover
+{
+    background-color: white;
+}
+
+.timeline
+{
+    height: 50vh;
+    padding: 5px;
+    overflow: scroll;
+    border-top: 1px solid black;
+}
+.timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.record
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    column-gap: 10px;
+    margin-bottom: 5px;
+}
+.record > .time
+{
+    text-align: center;
+}
