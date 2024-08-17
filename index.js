@@ -161,7 +161,11 @@ document.addEventListener("keydown", (event) => {
 })
 
 // 用户离开当前页面
-document.addEventListener("visibilitychange", pause);
+document.addEventListener("visibilitychange", () => {
+    if (tiemr_status == "running") {
+        pause()
+    }
+});
 
 setInterval(() => {
     if (tiemr_status == "running") {
