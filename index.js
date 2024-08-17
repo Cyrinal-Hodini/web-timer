@@ -9,7 +9,7 @@
  */
 function repair(number, length, character = "0", direction = "front") {
     let string = number.toString();
-
+ 
     if (direction == "front") {
         return string.padStart(length, character);
     } else if (direction == "behind") {
@@ -152,6 +152,10 @@ document.addEventListener("keydown", (event) => {
         } else {
             controller.style.display = "none";
         }
+    }
+
+    if (event.key == "d") {
+        disable_alert = !disable_alert;
     }
 })
 
