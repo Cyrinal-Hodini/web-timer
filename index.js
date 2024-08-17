@@ -68,7 +68,7 @@ let timer_element = document.getElementById("timer");
 let start_timestamp = get_now_timestamp();
 let last_pause = get_now_timestamp();
 let timer_offest = 0, timer_reset = false;
-let disable_alert = true, sequence = 0;
+let disable_alert = fasle, sequence = 0;
 let timeline = document.querySelector(".timeline");
 let controller = document.getElementById("controller");
 
