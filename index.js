@@ -77,8 +77,10 @@ function start() {
     if (tiemr_status == "running") {
         disable_alert || alert("计时器已处于运行状态")
     } else {
-        if (timer_reset) {
+        if (timer_reset) { 
+            timer_offest = 0;
             timer_reset = false;
+            start_timestamp = get_now_timestamp();
         } else {
             timer_offest += last_pause - get_now_timestamp();
         }
@@ -99,8 +101,7 @@ function pause() {
 
 // 处理用户点击“重置计时”按钮
 function reset() {
-    start_timestamp = get_now_timestamp();
-    timer_offest = 0, timer_reset = true;
+    timer_reset = true;
     tiemr_status = "paused";
     timer_element.innerText = format(0);
 }
